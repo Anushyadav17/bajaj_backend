@@ -86,4 +86,8 @@ app.post('/bfhl', (req, res) => {
   res.json(response);
 });
 
+app.use("/", (req,res) => {
+  res.send("<h1>Server is Running</h1>")
+});
+
 app.listen(port, () => console.log(`Server running on http://localhost:${port}`));
